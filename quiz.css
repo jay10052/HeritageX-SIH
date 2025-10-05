@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-image 1s ease-in-out; 
+    background-color: #1a1a1a; 
+    background-attachment: fixed;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+/*  Layout Positioning */
+.quiz-header, .quiz-main, .quiz-footer {
+    position: relative; 
+    z-index: 2;
+    width: 100%;
+}
+
+/* Header Styling */
+.quiz-header {
+    text-align: center;
+    padding: 30px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.quiz-header h1 {
+    font-size: 3.5em; 
+    color: #ffffff; 
+    letter-spacing: 3px;
+    font-weight: 800; 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 5px rgba(0, 0, 0, 1); 
+    margin: 0;
+}
+
+.quiz-header .fa-brain {
+    color: #ff9500; 
+    margin-right: 15px;
+    font-size: 1em;
+}
+
+/*  Main Quiz Container Styling */
+.quiz-main {
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 50px; 
+    border-radius: 20px; 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 0 8px rgba(255, 255, 255, 0.2) inset; 
+    width: 90%;
+    max-width: 650px;
+    margin: auto; 
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Question Section */
+#quiz p {
+    margin: 0;
+}
+
+.quiz-q {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #007bff; 
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Input Field Styling */
+#userAns {
+    width: 80%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50px; 
+    font-size: 1.1em;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#userAns:focus {
+    border-color: #ff9500; 
+    box-shadow: 0 0 0 4px rgba(255, 149, 0, 0.2);
+}
+
+/* Progress Text */
+#progress {
+    font-size: 1.1em;
+    color: #6c757d;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* --- Submit Button Styling */
+#submitBtn {
+    width: 100%;
+    padding: 18px 25px;
+    margin-top: 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff9500, #dc143c); 
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 149, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+#submitBtn:hover {
+    background: linear-gradient(to right, #dc143c, #ff9500); 
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(220, 20, 60, 0.6);
+}
+
+/* Scorecard Styling */
+.quiz-main h2 {
+    font-size: 2em;
+    color: #ff9500;
+    border-bottom: 3px solid #dc143c;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.quiz-main table {
+    border-collapse: separate !important; 
+    border-spacing: 0;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.quiz-main th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    padding: 12px 8px !important;
+    text-align: left;
+}
+.quiz-main td {
+    padding: 10px 8px !important;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95em;
+    color: #333;
+}
+
+/* Score Summary */
+.quiz-main div[style*="margin-top:18px"] {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff3cd; 
+    border: 1px solid #ffeeba;
+    font-size: 1.5em !important;
+}
+
+/* Footer Styling */
+.quiz-footer {
+    padding: 25px 0;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.quiz-footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border: 2px solid #ff9500;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.quiz-footer a:hover {
+    background-color: rgba(255, 149, 0, 0.2); 
+    transform: scale(1.05);
+}

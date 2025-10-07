@@ -11,16 +11,16 @@ const questions = [
   {q:"Which fruit is Kashmir most famous for?", a:"Apple"}
 ];
 const bgImages = [
-  "url('image/taj2.jpeg')",
-  "url('image/bhangra2.jpeg')",
-  "url('image/diwali.jpeg')",
-  "url('image/kathakali.jpeg')",
-  "url('image/ajanta.jpeg')",
-  "url('image/amer3.jpeg')",
-  "url('image/laddakh.jpeg')",
-  "url('image/smvd.jpeg')",
-  "url('image/dal.jpeg')",
-  "url('image/apple.jpeg')"
+  "url('taj2.jpeg')",
+  "url('bhangra2.jpeg')",
+  "url('diwali.jpeg')",
+  "url('kathakali.jpeg')",
+  "url('ajanta.jpeg')",
+  "url('amer3.jpeg')",
+  "url('laddakh.jpeg')",
+  "url('smvd.jpeg')",
+  "url('dal.jpeg')",
+  "url('apple.jpeg')"
 ];
 
 function showQuestion(idx) {

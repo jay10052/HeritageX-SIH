@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 body {
     margin: 0;
@@ -194,7 +194,7 @@ body::before {
 .quiz-footer a:hover {
     background-color: rgba(255, 149, 0, 0.2); 
     transform: scale(1.05);
-=======
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 body {
     margin: 0;
@@ -390,5 +390,4 @@ body::before {
 .quiz-footer a:hover {
     background-color: rgba(255, 149, 0, 0.2); 
     transform: scale(1.05);
->>>>>>> c1ea644915cff7d87536fab426da8cab41011ae4
 }
